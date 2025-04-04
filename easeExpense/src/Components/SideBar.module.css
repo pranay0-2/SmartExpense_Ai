@@ -1,0 +1,51 @@
+.sideBarContainer {
+  min-height: 100vh;
+  width: 20%;
+  background-color: #202938;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+
+.name {
+  width: 100%;
+  height: 40px;
+  padding: 10px 0px;
+  border-bottom: 0.1px solid rgb(226, 221, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.listItem {
+  padding: 10px 0px;
+  font-size: 1rem;
+  color: rgb(219, 217, 217);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.listItem > span {
+  margin-left: 10px;
+}
+
+.listItem:hover {
+  background-color: #a1a2a4;
+  color: white;
+  border-radius: 5px;
+}

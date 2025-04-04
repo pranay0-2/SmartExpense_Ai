@@ -1,0 +1,102 @@
+.dtCont {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(2px); /* Blurred effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  font-size: 1.5rem;
+}
+
+.dtCont_inn {
+  width: 40%;
+  height: 90%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.dtCont_head {
+  margin-top: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.dtCont_listCont {
+  height: 80%;
+  width: 85%;
+  margin-top: 20px;
+  padding: 10px;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.dtCont_listCont::-webkit-scrollbar {
+  width: 5px; /* Adjust width as needed */
+}
+
+.dtCont_listCont::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+}
+
+.dtCont_listCont::-webkit-scrollbar-thumb {
+  background: rgb(98, 96, 96); /* Grey thumb */
+  border-radius: 5px; /* Rounded edges */
+}
+
+.dtCont_listCont::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 0, 0); /* Slightly darker on hover */
+}
+
+.dtCont_list_text {
+  color: black;
+  font-weight: 700;
+  font-size: large;
+}
+
+.dtCont_list_amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.dtCont_listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+
+.dtCont_list_date {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  color: rgb(84, 84, 84);
+  font-size: x-small;
+}
+
+.dtCont_list_value {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+}

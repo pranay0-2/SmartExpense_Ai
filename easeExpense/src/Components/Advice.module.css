@@ -1,0 +1,111 @@
+/* Outer container to fit inside the main layout */
+.container {
+  width: 80%;
+  padding: 0px 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Centers horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements */
+}
+
+/* Title Styling */
+.title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Fetch button */
+.button {
+  display: block;
+  width: 180px;
+  margin: 8px auto;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.outerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+/* Centering the insights container */
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 8px;
+  justify-content: center; /* Centers the grid items horizontally */
+  align-items: center; /* Centers the grid items vertically */
+  padding: 10px;
+  width: fit-content; /* Keeps grid items tightly packed */
+  margin: auto; /* Centers the entire grid */
+}
+
+/* Each section of insights */
+.section {
+  padding: 8px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  min-height: 120px; /* Ensures all sections have at least this height */
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* Centers content vertically */
+  text-align: left;
+}
+
+/* For additional sections below the grid */
+.sectionOut {
+  padding: 8px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  text-align: left;
+  width: 59%;
+}
+
+.sectionOut > ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Text Styling */
+.section h3 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 2px;
+}
+
+.section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section li {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.section p {
+  font-size: 14px;
+  color: #555;
+}

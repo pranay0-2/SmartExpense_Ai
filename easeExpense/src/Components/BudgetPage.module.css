@@ -1,0 +1,80 @@
+.budgetDiv {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.2); /* Slight dark overlay effect */
+}
+
+.budgetDiv_Entry {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  background: white; /* Transparent card */
+  width: 320px;
+  color: black;
+}
+
+.dtCont_head {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+
+.inps {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.inps span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+
+.budgetDiv_Entry_inp {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: black;
+  outline: none;
+}
+
+.budgetDiv_Entry_inp::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.budgetDiv_Entry_btn {
+  width: 100%;
+  padding: 10px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.budgetDiv_Entry_btn:hover {
+  background: lightgray;
+}
